@@ -31,18 +31,6 @@ pipeline {
             }
         }
 		//Code ends for stage Compile
-	
-		// ******ALL CODE TO BE ADDED ABOVE THIS COMMENT******
-    }
-}
-
-//Code starts for stage Compile
-		stage('Compile') {
-            steps {
-                sh 'mvn compile'
-            }
-        }
-		//Code ends for stage Compile
 
 	//Code starts for stage Unit Test
         stage('Unit Test') {
@@ -56,4 +44,12 @@ pipeline {
             }
         }
 		//Code ends for stage Unit Test
+
+	
+		// ******ALL CODE TO BE ADDED ABOVE THIS COMMENT******
+    }
+}
+
+
+
 	
